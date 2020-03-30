@@ -44,4 +44,18 @@ public void setCantidadDeHijos(int unaCantidadDeHijos) {
 public void setSaldo(float unSaldo) {
     this.saldo = unSaldo;
 }
+//EQUALS
+public boolean equals (Object obj) {
+    if (obj instanceof Usuario) {
+        Usuario usuario = (Usuario) obj;
+        if (this.usuario.equals(usuario.cedula)) { 
+            return true; 
+        } else { 
+            return false; 
+        }
+    } else { 
+        return false; 
+    }
+    return false;
+}
 }
